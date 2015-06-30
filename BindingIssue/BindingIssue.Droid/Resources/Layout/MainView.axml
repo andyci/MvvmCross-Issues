@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <MvxRadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        local:MvxBind="ItemsSource List1; SelectedItem SelectedItem1"
+        local:MvxItemTemplate="@layout/radio_item" />
+    <MvxRadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        local:MvxBind="ItemsSource List2; SelectedItem SelectedItem2"
+        local:MvxItemTemplate="@layout/radio_item" />
+</LinearLayout>
